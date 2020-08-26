@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <style>
+            body{text-align : center}
+        </style>
+        <style type="text/css">
+            body{
+                background-image: url(images/download.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+    
+        </style>
+        <style>
+            body{
+                font-style: italic;
+            }
+        </style>
+        
+        <centre><font color = "Yellow" size = 20>Food Form</font></centre>
+        <div id="Food-type">
+            <font color = "Yellow" size = 18>Veg or non-veg</font><br>
+            <select id="veg-or-not">
+                <option>Veg</option>
+                <option>Non-veg</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="Type-of-food">
+            <font color = "Aqua" size = 18>The type of food</font><br>
+            <font color = "Aqua">If its not in this please <br>write it down in the comments box</font>
+            <br>
+            <br>
+            <br>
+            <select id="Type" required = "true">
+                <option>Dal and rice</option>
+                <option>Roti and subzi</option>
+                <option>Paratha</option>
+                <option>Just Rice</option>
+                <option>Chicken Curry</option>
+                <option>Fish Curry</option>
+                <option>Idli</option>
+                <option>Dosa</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div id="Comments">
+            
+            <textarea name= "comment" id="comment" placeholder="Write Your Comments"></textarea>
+        </div>
+        <br>
+        <div id="submit">
+            <button type="button" id="submit2" onclick="location.href = 'homepage2.html';">Submit Form</button>
+        </div>
+    </body>
+</html>

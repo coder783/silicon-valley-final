@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>The Delivery Page</title>
+    </head>
+    <body>
+        <style>
+            body{
+                background-image :url(images/download.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+                text-align: center;
+                text-size-adjust: 20;
+            }
+            div#From-address a{
+                color:cyan;
+                text-emphasis: size 20;;
+            }
+            div#From-address h1{
+                color:cyan;
+            }
+            div#To-address{
+                color:yellow;
+            }
+        </style>
+        
+        <div id="From-address">
+            <h1><center>This is the delivery confirmation page</center></h1>
+            <a href="#" id="get_location" >Get location</a>
+            <div id="map">
+                <iframe id="google_map" width="800" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in?output=embed"></iframe>
+            </div>
+            <script>
+                var c = function(pos){
+                    var lat = pos.coords.latitude,
+                     long = pos.coords.longitude,
+                     coords = lat +"," + long;
+
+                    document.getElementById("google_map").setAttribute("src", "https://maps.google.co.in/?q=" + coords +"&z=60&output=embed"); 
+                }
+                document.getElementById("get_location").onclick = function(){
+                    navigator.geolocation.getCurrentPosition(c);
+                }
+            </script>
+        </div>
+        <div id="To-address">
+            <h3>To address</h3>
+            <p>The Public Fridge<br>341, 7th Cross Rd, Bangiyappa Garden,<br> Bheemanna Garden, Lakshmiamma Garden,<br> Shanti Nagar, Bengaluru, Karnataka 560027 </p>
+        </div>
+        <div>
+            <button type="button" onclick="location.href = 'thankYou.html';">Confirm Delivery</button>
+        </div>
+        
+    </body>
+</html>

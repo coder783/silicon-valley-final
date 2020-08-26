@@ -1,0 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+div#Login{
+  margin-top: 20%;
+  margin-left: 45%;
+}
+input, button{
+  margin-top: 2%;
+  display: block;
+  width: 20%;
+}
+div#Comments{
+  margin-top: 20%;
+  margin-left: 45%;
+}
