@@ -18,6 +18,9 @@
             div#From-address h1{
                 color:cyan;
             }
+            div#From-address h2{
+                color: yellow;
+            }
             div#To-address{
                 color:yellow;
             }
@@ -25,9 +28,10 @@
         
         <div id="From-address">
             <h1><center>This is the delivery confirmation page</center></h1>
+            <h2><center>Click On Get Location To Allow The App to Know The Distance And Track The Nearest Delivery Personnel</center></h2>
             <a href="#" id="get_location" >Get location</a>
             <div id="map">
-                <iframe id="google_map" width="800" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in?output=embed"></iframe>
+                <iframe id="google_map" width="800" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in?output=embed"></iframe>
             </div>
             <script>
                 var c = function(pos){
